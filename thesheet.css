@@ -1,4 +1,14 @@
-ul{
+body{
+    background-color:#e0e2db;
+}
+
+/*Navbar Related*/
+.pgContent{
+    padding:20px;
+    margin-top:30px;
+    height:500px;
+}
+.navigation{
     list-style-type:none;
     margin: 0;
     padding: 0;
@@ -9,23 +19,45 @@ ul{
     left:0;
     width:100%;
 }
-li{
+.navbar{
     float: right;
 }
-li a {
+.navbar a {
     display:block;
-    color:#e0e2db;
+    color:#d2d4c8;
     text-align:center;
     padding:14px 16px;
     text-decoration:none;
-}
-li a:hover:not(.active){
-    background-color:#444a47;
 }
 .navLeft{
     float:left;
     padding:10px 25px;
 }
+.navCurPg{
+    background-color:#8b2635;
+    color:#e0e2db;
+}
+
+/*Text Related*/
+h1{
+    text-align:center;
+    font-family:'Trebuchet MS';
+}
+h2{
+    font-family:Helvetica;
+}
+
+/*Image Related*/
 img{
     display:inline-block;
+}
+.webImg{
+    display:inline-block;
+    margin:10px;
+}
+.fltLeft{
+    float:left;
+}
+.fltRight{
+    float:right;
 }
