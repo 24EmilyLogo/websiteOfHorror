@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Karma&family=Overpass:ital,wght@1,100&display=swap');
+
 body{
     background-color:#e0e2db;
+    font-family:Karma;
+    color:#2e3532;
 }
 
 /*Navbar Related*/
@@ -41,10 +45,19 @@ body{
 /*Text Related*/
 h1{
     text-align:center;
-    font-family:'Trebuchet MS';
+    font-family:'Cormorant Garamond';
 }
 h2{
-    font-family:Helvetica;
+    font-family:'Overpass';
+    font-weight:400;
+    font-style:italic;
+}
+table{
+    border-collapse:collapse;
+}
+th,td{
+    border:1px solid black;
+    width:33%;
 }
 
 /*Image Related*/
