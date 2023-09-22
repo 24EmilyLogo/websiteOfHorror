@@ -1,29 +1,40 @@
 /*
-@media only screen and (max-width:1024px){
-    p{
-        font-size:2vw;
+@keyframes pulse{
+    0%, 100%{
+        background-color:var(--light);
+    }
+    50%{
+        background-color: var(--medium);
     }
 }
 */
 
+:root{
+    --light: #e0e2db;
+    --medium: #d2d4c8;
+    --dark: #2e3532;
+    --accent: #8b2635;
+}
+
 body{
-    background-color:#e0e2db;
+    background-color:var(--light);
+    /*animation:pulse 45s infinite;*/
     font-family:Karma;
-    color:#2e3532;
+    color:var(--dark);
 }
 
 /*Navbar Related*/
 .pgContent{
-    padding:20px;
-    margin-top:30px;
-    height:500px;
+    padding:1.25rem;
+    margin-top:1.875rem;
+    height:31.25rem;
 }
 .navigation{
     list-style-type:none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#2e3532;
+    background-color:var(--dark);
     position:fixed;
     top:0;
     left:0;
@@ -34,22 +45,27 @@ body{
 }
 .navbar a {
     display:block;
-    color:#d2d4c8;
+    color:var(--medium);
     text-align:center;
-    padding:14px 16px;
+    padding:0.875rem 1rem;
     text-decoration:none;
 }
 .navLeft{
     float:left;
-    padding:10px 25px;
+    padding:0.625rem 1.563rem;
 }
 .navCurPg{
-    background-color:#8b2635;
-    color:#e0e2db;
+    background-color:var(--accent);
+    color:var(--light);
 }
 .notCurPg:hover{
     background-image:linear-gradient(to top, #232726, #2e3532);
 }
+
+/*margin-bottom: 1em spacing btwn text*/
+
+/*max-width:100%for imgs*/
+
 /*Text Related*/
 h1{
     text-align:center;
@@ -64,20 +80,22 @@ table{
     border-collapse:collapse;
 }
 th,td{
-    border:1px solid black;
+    border:0.063rem solid black;
     width:33%;
 }
 p{
-    font-size:16px;
+    font-size:1rem;
 }
 
 /*Image Related*/
 img{
     display:inline-block;
+    max-width:100%
 }
-.webImg{
+.webImg,
+iframe{
     display:inline-block;
-    margin:10px;
+    margin:0.625rem;
 }
 .fltLeft{
     float:left;
