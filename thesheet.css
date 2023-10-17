@@ -1,13 +1,13 @@
-/*
-@keyframes pulse{
+
+/* @keyframes pulse{
     0%, 100%{
         background-color:var(--light);
     }
     50%{
         background-color: var(--medium);
     }
-}
-*/
+} */
+
 
 :root{
     --light: #e0e2db;
@@ -18,7 +18,7 @@
 
 body{
     background-color:var(--light);
-    /*animation:pulse 45s infinite;*/
+    /* animation:pulse 45s infinite; */
     font-family:Karma;
     color:var(--dark);
 }
