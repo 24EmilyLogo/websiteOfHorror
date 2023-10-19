@@ -24,7 +24,9 @@ body{
 }
 
 .colors{
-    color:#8b2635
+    color:var(--accent);
+    margin:auto auto 25px auto;
+    display: inline-block;
 }
 
 /*Navbar Related*/
